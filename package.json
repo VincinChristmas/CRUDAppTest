@@ -1,0 +1,23 @@
+{
+  "name": "crudapptest",
+  "version": "1.0.0",
+  "description": "getting ready to make a CRUD app. doing this Star Wars Quote one to do some review",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongodb": "^6.7.0",
+    "nodemon": "^3.1.1",
+    "save": "^2.9.0"
+  },
+  "devDependencies": {
+    "nodeman": "^1.1.2"
+  }
+}

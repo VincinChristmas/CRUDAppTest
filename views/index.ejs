@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MY APP</title>
+  </head>
+  <body>
+    <h1>Book Wish List</h1>
+    
+    <form action="/BookTitles" method="POST">
+        <input type="text" placeholder="name" name="name" />
+        <input type="text" placeholder="BookTitles" name="BookTitles" />
+        <button type="submit">Submit</button>
+      </form>
+      <h2>Books</h2>
+
+<ul class="BookTitles">
+  <!-- Loop through quotes -->
+  <% for(var i = 0; i < BookTitles.length; i++) {%>
+  <li class="BookTitles">
+    <!-- Output name from the iterated quote object -->
+    <span><%= BookTitles[i].name %></span>:
+    <!-- Output quote from the iterated quote object -->
+    <span><%= BookTitles[i].BookTitles %></span>
+  </li>
+  <% } %>
+
+  <div>
+    <h2>Other Books!</h2>
+    <p>Replace first Booke with a new book</p>
+    <button id="update-button">Replace book</button>
+  </div>
+</ul>
+
+<div>
+    <h2>Remove Darth Vader!</h2>
+    <p>
+      Delete one Darth Vader's quote. Does nothing if there are no more Darth
+      Vader's quote
+    </p>
+    <button id="delete-button">Delete Darth Vader's quote</button>
+  </div>
+  <div id="message"></div>
+<script src="/main.js"></script>
+  </body>
+</html>
